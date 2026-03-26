@@ -1,6 +1,24 @@
 from decimal import Decimal
 
-price = eval(input("Type the price of the product: "))
+vendM = ["water", "chips Mini", "chips Mid", "chips Maxi", "coca Cola",
+         "fanta Lemonade", "fanta Orange", "soda", "coca Cola Light", "pepsi",
+         "pepsi Max", "chocolate", "chocolate strawberry", "mini chocolate", "choco"
+         ]
+
+prices = [0.5, 0.7, 1.2, 2, 1,
+          1, 1, 1, 1.2, 1.3,
+          1.5, 1.7, 1.8, 0.2, 0.5]
+
+print("----------------------------")
+for i in range(len(vendM)):
+    print(f"{i+1:<3}{vendM[i]:<22}{prices[i]:<10}")
+print("----------------------------")
+
+pId = int(input("Type the product 's ID: "))
+
+price = prices[pId - 1]
+print("You choose", vendM[pId - 1], ". It costs", price)
+
 cash = eval(input("Type cash: "))
 
 change = Decimal(Decimal(str(cash)) - Decimal(str(price))) * 100
