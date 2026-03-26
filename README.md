@@ -1,6 +1,6 @@
 # 1. Description
 ## Vending Machine
-The simpler form of a vending machine. The user types the price of the product and the amount of money they insert. The output is the vhange in coins.
+The simpler form of a vending machine. The user types the price of the product and the amount of money they insert. The output is the change in coins.
 
 # 2. Features
 * Proccesses decimal numbers
