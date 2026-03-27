@@ -23,7 +23,7 @@ cash = eval(input("Type cash: "))
 change = Decimal(Decimal(str(cash)) - Decimal(str(price))) * 100
 change = abs(change)
 
-print("It works!!!")
+print("WHY!!!")
 
 dievra = change // 200
 monoevra = (change % 200) // 100
