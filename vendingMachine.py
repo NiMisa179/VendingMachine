@@ -14,7 +14,7 @@ for i in range(len(vendM)):
     print(f"{i+1:<3}{vendM[i]:<22}{prices[i]:<10}")
 print("----------------------------")
 
-print("IT WORKS!")
+print("IT WORKs!")
 
 pId = int(input("Type the product 's ID: "))
 
